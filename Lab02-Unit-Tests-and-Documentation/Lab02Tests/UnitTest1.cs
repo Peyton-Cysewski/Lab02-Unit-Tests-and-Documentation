@@ -19,7 +19,7 @@ namespace Lab02Tests
         }
 
         [Fact]
-        public void IgnoreNegativeWithdrawal()
+        public void IgnoresNegativeWithdrawal()
         {
             Balance = 10000;
             decimal expected = 10000;
@@ -31,7 +31,7 @@ namespace Lab02Tests
         }
 
         [Fact]
-        public void IgnoreTooLargeWithdrawal()
+        public void IgnoresTooLargeWithdrawal()
         {
             Balance = 10000;
             decimal expected = 10000;
@@ -41,5 +41,18 @@ namespace Lab02Tests
 
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void IgnoresNegativeDeposit()
+        {
+            Balance = 10000;
+            decimal expected = 15000;
+
+            decimal depositAmount = 5000;
+            decimal actual = Deposit(depositAmount);
+
+            Assert.Equal(expected, actual);
+        }
+
     }
 }
