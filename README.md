@@ -5,10 +5,8 @@
 ----
 
 ## Description
-***[Tell me about your application, should be about a paragraph]***
-This is a C# console application that will ask a user several questions about me, the
-developer. There are multiple question types ranging from inputting a number to True or False.
-At the end of the game the user receives their total score.
+
+This console application is a simple ATM simulator. Each time the application is run the user starts out with $10000.00 in their ATM account. The user is then presented with four options: to view the current balance, deposit money into it, withdraw money from it, or exit the ATM. Deposits and withdrawals cannot be negative and the withdrawal amount cannot supercede the amount remaining in the account.
 
 ---
 
@@ -24,26 +22,25 @@ Select ```File``` -> ```Open``` -> ```Project/Solution```
 
 Next navigate to the location you cloned the Repository.
 
-Double click on the ```Lab01-About-Me``` directory.
+Double click on the ```Lab02-Unit-Tests-and-Documentation``` directory.
 
-Then select and open ```AboutMe.sln```
+Then select and open ```Lab02-Unit-Tests-and-Documentation.sln```
 
 ---
 
 ### Visuals
-***[Add screenshots of your application in action]***
 
 #### Application Start
-![Image 1](https://via.placeholder.com/750x500)
+![Welcome Message](./assets/startscreen.png)
 #### Using the Application
-![Image 1](https://via.placeholder.com/750x500)
+![Viewing the Balance](./assets/viewingbalance.png)
 #### Application End
-![Image 1](https://via.placeholder.com/750x500)
+![Entering '4' to Exit](./assets/exiting.png)
 
 ---
 
 ### Change Log
-1.1: *Initial Release of the console app* - 7 July 2020  
+1.1: *Initial Release of the console ATM app* - 7 July 2020  
 
 
 ------------------------------
