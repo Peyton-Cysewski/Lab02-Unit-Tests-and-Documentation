@@ -19,6 +19,8 @@ namespace Lab02_Unit_Tests_and_Documentation
         {
             Console.WriteLine("Welcome to the console ATM!");
             int choice = 0;
+
+            // validation loop to ensure proper input is received
             while (choice < 1 || choice > 4)
             {
                 Console.WriteLine("Enter a number to select an action below:\n1) View Your Balance\n2) Deposit Funds\n3) Withdraw Funds\n4) Exit");
@@ -33,6 +35,7 @@ namespace Lab02_Unit_Tests_and_Documentation
                 {
                 }
 
+                // handles the functions that relate to the user interface before again, in some case, sterilizing the user input before it can be passed to subsequent methods
                 switch (choice)
                 {
                     case 1:
